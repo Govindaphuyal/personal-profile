@@ -15,3 +15,45 @@
     box-shadow: 10px 0 15px rgba(255, 255, 255);
     animation: moving-border 3s infinite alternate;
   }
+  /* Slider container */
+.slider-container {
+  position: relative;
+  width: 1000px; /* Matches image width */
+  height: 900px; /* Matches image height */
+  margin: 0 auto; /* Center the slider */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Slider wrapper */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Individual slides */
+.slide {
+  min-width: 100%; /* Each slide takes full width of the container */
+  height: auto;
+}
+
+/* Navigation buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}

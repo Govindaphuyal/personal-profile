@@ -44,8 +44,8 @@ const Main = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.4 }}
-          className="text-red-500 font-[1000]"
+          transition={{ duration: 1 }}
+          className="text-red-500 font-[1000] border-4 border-indigo-200 border-r-indigo-500"
         >
           {roles[index]}
         </motion.span>
@@ -56,7 +56,7 @@ const Main = () => {
             </p>
             <div className="mt-5 sm:flex md:mt-8">
                 <div className="rounded-md shadow"><a href=""
-                        className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
+                        className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-gray-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10 hover:outline-2 outline-offset-2 outline-cyan-500">
                         DownLoad Cv
                     </a></div>
                 <div className='p-9  flex gap-9 '>
