@@ -1,62 +1,81 @@
-"use client"
-import Image from 'next/image'
-import React ,{useState}from 'react'
+"use client";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Portfolio = () => {
-  const images = [
-    "/Screenshot 2025-04-07 140307.png",
-    "/Screenshot 2025-04-07 142544.png",
-    "/Screenshot 2025-04-07 142938.png",
-  ];
-
-  // State to track the current image index
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Function to handle "Next" button click
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  // Function to handle "Previous" button click
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
   return (
-    <div>
-    <h1 className='text-3xl font-bold text-center mb-8'>Latest Project</h1>
-    <main className='ml-10 flex gap-24 items-start'>
-      <div className='max-w-md'>
-        <h2 className='text-2xl font-bold'>01</h2>
-        <h3 className='text-xl mt-2 mb-2'>FrontEnd Project</h3>
-        <p className='mb-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p className='text-sm text-gray-600'>HTML5, CSS3, JavaScript</p>
-      </div>
-      <section>
-            <div className='mr-19'>
-            <Image
-      src="/Screenshot 2025-04-07 140307.png"
-      alt="Screenshot"
-      width={1000}
-      height={900}/>
-      <Image
-      src="/Screenshot 2025-04-07 142544.png"
-      alt="Screenshot"
-      width={1000}
-      height={900}/>
-      <Image
-      src="/Screenshot 2025-04-07 142938.png"
-      alt="Screenshot"
-      width={1000}
-      height={900}/>
-      
-               </div>
-           </section>
-    </main>
-  </div>
-  
-  )
-}
+    <div className="bg-black min-h-screen">
+      {/* Title */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-8">
+        Latest Projects
+      </h1>
 
-export default Portfolio
+      {/* Main Content */}
+      <main className="flex flex-col lg:flex-row gap-6 px-5 sm:px-10 md:px-16 py-10">
+        {/* Left Section (Text) */}
+        <div className="w-full lg:w-1/3 space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">01</h2>
+          <h3 className="text-xl sm:text-2xl text-white">FrontEnd Project</h3>
+          <p className="text-sm sm:text-base text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <p className="text-xs sm:text-sm text-green-600">HTML5, CSS3, JavaScript</p>
+          <hr className="border-white mt-3" />
+        </div>
+
+        {/* Right Section (Swiper Slider) */}
+        <section className="w-full lg:w-2/3">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            loop={true}
+            navigation
+            pagination={{ clickable: true }}
+            modules={[Navigation, Pagination]}
+            
+            className="rounded-xl"
+          >
+            {/* Slide 1 */}
+            <SwiperSlide>
+              <Image
+                src="/Screenshot 2025-04-07 140307.png"
+                alt="Screenshot 1"
+                width={1000}
+                height={900}
+                className="rounded-xl w-full h-auto object-cover"
+              />
+            </SwiperSlide>
+
+            {/* Slide 2 */}
+            <SwiperSlide>
+              <Image
+                src="/Screenshot 2025-04-07 142544.png"
+                alt="Screenshot 2"
+                width={1000}
+                height={900}
+                className="rounded-xl w-full h-auto object-cover"
+              />
+            </SwiperSlide>
+
+            {/* Slide 3 */}
+            <SwiperSlide>
+              <Image
+                src="/Screenshot 2025-04-07 142938.png"
+                alt="Screenshot 3"
+                width={1000}
+                height={900}
+                className="rounded-xl w-full h-auto object-cover"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </section>
+      </main>
+    </div>
+  );
+};
+
+export default Portfolio;

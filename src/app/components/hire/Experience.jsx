@@ -9,7 +9,7 @@ const Experience = () => {
           <div className="bg-gray-600  text-white px-4 py-1 rounded">
         <div class="bg-grey-200 rounded-lg shadow-lg overflow-hidden max-w-lg w-full">
         <div class="p-6">
-            <h2 class="text-2xl font-bold text-white mb-2">Frontend Developer</h2>
+            <h2 class="text-2xl font-bold text-white mb-2 hover:text-red-600 cursor-pointer">Frontend Developer</h2>
             <p class="text-white leading-tight mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu sapien porttitor, blandit velit ac,
                 vehicula elit. Nunc et ex at turpis rutrum viverra.

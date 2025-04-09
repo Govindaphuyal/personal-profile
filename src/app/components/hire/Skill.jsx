@@ -13,36 +13,36 @@ const Skill = () => {
                   <h1 className="text-4xl text-white">My <span className='text-2xl text-green-400 font-bold'>Skills</span></h1>
                   <p className='w-180 text-2xl text-white'>I specialize in Web Development, Frontend & Backend Development, crafting responsive, high-performance websites and apps with seamless user experiences. From SEO optimization to scalable coding and data-driven marketing, I deliver conversion-focused solutions that enhance brand visibility and business growth. 🚀. where i'm doing Full-Stact on MERN Stack.</p>
                   <div className=" flex gap-9 flex-wrap mb-10">
-                    <div class="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div class="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                       <ImHtmlFive2 className='font-bold '/>
                       <span>HTML5</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <FaCss3Alt />
                       <span>CSS3</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <FaCss3Alt />
                       <span>Tailwind Css</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <IoLogoJavascript/>
                       <span>Javascript</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <FaReact/>
                       <span>React Js</span>
                     </div>
                     
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <RiNextjsFill/>
                       <span> Next Js</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <FaNodeJs />
                       <span> Node Js</span>
                     </div>
-                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded">
+                    <div className="resume-item bg-gray-600  text-white px-4 py-2 rounded hover:outline-2 outline-offset-2 outline-cyan-500">
                     <SiMongodb/>
                       <span> MongoDb</span>
                     </div>
