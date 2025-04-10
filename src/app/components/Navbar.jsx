@@ -48,7 +48,7 @@ const Navbar = () => {
         <div
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 w-full lg:w-auto text-center sm:m-4 text-center  md:text-center`}
+          } lg:flex flex-col lg:flex-row lg:space-x-2 lg:mt-0 w-full lg:w-auto text-center sm:m-4 text-center  md:text-center`}
         >
           <Link href="/" className={linkStyle} onClick={closeMenu}>
             Home
