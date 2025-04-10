@@ -13,7 +13,7 @@ const Navbar = () => {
     'text-white px-4 py-2 hover:text-orange-600 text-center lg:text-left';
 
   return (
-    <nav className="bg-black p-4 sticky top-0 z-50">
+    <nav className="bg-black p-4 sticky top-0 ">
       <div className="container mx-0 flex flex-col lg:flex-row justify-between items-center">
         {/* Logo */}
         <div className="text-white font-bold text-3xl mb-4 mx-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer">
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 w-full lg:w-auto`}
+          } lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 w-full lg:w-auto text-center sm:m-4 text-center  md:text-center`}
         >
           <Link href="/" className={linkStyle} onClick={closeMenu}>
             Home
