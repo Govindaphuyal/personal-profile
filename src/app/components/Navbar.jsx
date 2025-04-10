@@ -10,7 +10,7 @@ const Navbar = () => {
 
   // Reusable styles for navigation links
   const linkStyle =
-    'text-white px-4 py-2 hover:text-orange-600 text-center lg:text-left';
+    'text-white px-2 py-2 hover:text-orange-600 text-center lg:text-left';
 
   return (
     <nav className="bg-black p-4 sticky top-0 ">
