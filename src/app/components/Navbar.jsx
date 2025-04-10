@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
-      <div className="container mx-1 flex flex-col lg:flex-row justify-between items-center">
+      <div className="container mx-0 flex flex-col lg:flex-row justify-between items-center">
         {/* Logo */}
         <div className="text-white font-bold text-3xl mb-4 mx-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer">
           Portfolio
