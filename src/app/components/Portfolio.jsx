@@ -8,14 +8,15 @@ import "swiper/css/pagination";
 
 const Portfolio = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black h-200">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-8">
-        Latest Projects
-      </h1>
+      
 
       {/* Main Content */}
       <main className="flex flex-col lg:flex-row gap-6 px-5 sm:px-10 md:px-16 py-10">
+      <h1 className="text-3xl sm:text-4xl  md:text-5xl font-bold text-center text-white mb-8 mt-20">
+        Latest Projects
+      </h1>
         {/* Left Section (Text) */}
         <div className="w-full lg:w-1/3 space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">01</h2>

@@ -3,15 +3,15 @@ import React from 'react';
 
 const Service = () => {
   return (
-    <div className="bg-black h-167">
+    <div className="bg-black h-220 sm:bg-black h-220 md:bg-black h-1 overflow-hidden">
       {/* Container */}
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
         {/* Title */}
-        <h1 className="text-center text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+        <h1 className="text-center text-white font-bold text-3xl relative right-25 sm:text-4xl mt-25 md:text-5xl">
           My <span className="text-green-600">Services</span>
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10  relative left-[150]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10  mb-1 relative left-[20] sm:relative left-[10] md:relative  left-[10]">
           {/* Card 1 */}
           <div className="border border-gray-400 bg-white rounded-lg shadow-md hover:border-green-900 transition duration-300 ">
             <div className="p-4 pt-2">

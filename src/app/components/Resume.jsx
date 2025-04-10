@@ -15,7 +15,7 @@ const Resume = () => {
       <div className="max-w-screen-xl mx-auto px-5 sm:px-10 md:px-16 py-10">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="font-black text-4xl sm:text-5xl md:text-6xl text-white">
+          <h1 className="font-black text-4xl sm:text-5xl mt-20 md:text-6xl text-white">
             Hire Me
           </h1>
           <p className="w-full text-lg sm:text-xl md:text-2xl mt-5 text-white">

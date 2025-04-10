@@ -26,11 +26,9 @@ const Main = () => {
 
   return (
     <div className="bg-black min-h-screen">
-      {/* Container */}
       <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto sm:px-6 md:flex-row md:items-center p-8">
-        {/* Left Section (Text) */}
         <div className="flex flex-col items-start py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl mt-15 md:text-5xl font-extrabold text-white leading-tight tracking-tight">
             Govinda
             <span className="font-bold"> Phuyal</span>
           </h2>
